@@ -35,7 +35,7 @@ body {
     height: 100%;
     top: 0;
     left: 50%;
-    background: red;
+    background: rgb(194, 174, 218);
 }
 
 .branch__block {
@@ -64,7 +64,7 @@ body {
     width: 100%;
     top: 50%;
     left: 0;
-    background: red;
+    background: rgb(197, 165, 196);
     z-index: -1;
 }
 
