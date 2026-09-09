@@ -1,0 +1,98 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color:rgb(224, 213, 108);
+    background-image:url(../img/fon.jpg) ;
+    background-size: cover;
+    font-family: "Huninn", sans-serif;
+}
+.container {
+    max-width: 1240px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0 15px;
+
+}
+
+.map {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.map::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 5px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    background: red;
+}
+
+.branch__block {
+    z-index: 10;
+    max-width: 350px;
+    min-height: 150px;
+    border-radius: 20px;
+    padding: 20px;
+    border: 5px solid rgb(189, 157, 190);
+    background: rgb(214, 202, 238);
+}
+
+.branch {
+    position: relative;
+    display: flex;
+    width: 50%;
+}
+
+
+
+.branch::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 5px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    background: red;
+    z-index: -1;
+}
+
+.branch:nth-child(even) {
+    margin-left: auto;
+    justify-content: flex-end;
+
+}
+
+.branch:nth-child(odd) {
+    margin-right: auto;
+    justify-content: flex-start;
+}
+
+.branch__block:has(.branch__btn:checked) {
+    background: lightgreen;
+    border-color: green;
+}
+
+@media(max-width:740px) {
+    .branch::after {
+        background: transparent;
+    }
+    .branch {
+        width: 80%;
+        margin-bottom: 50px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дорожная карта</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Huninn&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+            <img width="50 px" src="img/microsoft-teams.svg" alt="teams">
+            Стать frontend-разработчиком CSS
+        
+        </h1>
+        <p>CSS (Cascading Style Sheets) — стандартный язык описания визуального оформления HTML5-документов, управляющий макетом, цветом, типографикой, отступами и анимациями на веб-страницах. </p>
+        <p>  CSS работает посредством применения правил — состоящих из селектора и блока объявлений с парами свойство: значение — к HTML-элементам; алгоритм каскадирования и специфичности определяет, какое правило побеждает, когда несколько правил нацелены на один и тот же элемент.</p>
+        <div class="map">
+            <div class="branch">
+                <div class="branch__block">
+                    <h2>Модель коробки CSS</h2>
+                    <p>CSS Box Model — это фундаментальная концепция компоновки, описывающая каждый HTML-элемент как прямоугольный блок, состоящий из четырёх вложенных слоёв: содержимое (content), padding, border и margin. </p>
+                    <p> По умолчанию браузеры используют модель content-box, при которой width и height применяются только к области содержимого, но задание box-sizing: border-box (повсеместно рекомендуется через сброс * { box-sizing: border-box; }) включает padding и border в объявленные размеры, что делает компоновку значительно предсказуемее. </p>
+                    <a target =_blank href="https://devroadmap.ru/roadmaps/csharp">CSS model box</a>
+                    <div>
+                        <input class="branch__btn" type="checkbox" id="checkbox1">
+                        <label for="checkbox1">Изучено</label>
+                    </div>
+                </div>
+            </div>
+            <div class="branch">
+                <div class="branch__block">
+                    <h2>CSS grid</h2>
+                    <p>CSS Grid — это двухмерная система компоновки CSS3, позволяющая frontend-разработчикам создавать сложные адаптивные макеты, размещая элементы в строках и столбцах, определённых на контейнере. /<p>
+                        <p> Задание display: grid на контейнере открывает доступ к свойствам grid-template-columns, grid-template-rows, grid-template-areas и gap для построения каркаса макета, а дочерние элементы используют grid-column, grid-row и grid-area для позиционирования внутри сетки. </p>
+                        <p> CSS Grid превосходно справляется с задачами компоновки на уровне страницы — многоколоночными статьями, дашбордами, галереями карточек, — которые потребовали бы глубоко вложенных Flexbox-контейнеров или ненадёжных float-хаков в старом CSS.</p>
+                    <a href="https://devroadmap.ru/roadmaps/frontend">CSS grid</a>
+                    <div>
+                        <input class="branch__btn" type="checkbox" id="checkbox2">
+                        <label for="checkbox2">Изучено</label>
+                    </div>
+                </div>
+            </div>
+            <div class="branch">
+                <div class="branch__block">
+                    <h2>Переменные CSS</h2>
+                    <p>Пользовательские свойства CSS, широко известные как CSS-переменные, — это нативная возможность CSS3, позволяющая разработчикам определять переиспользуемые значения с синтаксисом --имя-свойства: значение и ссылаться на них в любом месте таблицы стилей через функцию var(--имя-свойства).</p>
+                    <p>  В отличие от переменных препроцессоров (Sass или Less), CSS-переменные живут в браузере: они каскадируются по DOM, подчиняются специфичности и могут обновляться во время выполнения через JavaScript .</p>
+                    <a href="https://devroadmap.ru/roadmaps/frontend"> Переменные CSS </a>
+                    <div>
+                        <input class="branch__btn" type="checkbox" id="checkbox3">
+                        <label for="checkbox3">Изучено</label>
+                    </div>
+                </div>
+            </div>
+            <div class="branch">
+                <div class="branch__block">
+                    <h2>Селекторы CSS</h2>
+                    <p>CSS-селекторы — это паттерны, используемые для выбора HTML-элементов и применения к ним блоков объявлений CSS, что составляет основной механизм работы любой таблицы стилей.</p>
+                    <p> Селекторы варьируются от простых — тег (h1), класс (.card), идентификатор (#header) — до сложных комбинаторов: потомок ( ), дочерний (>), соседний (+) и общий сиблинг (~). CSS3 ввёл мощные псевдоклассы :hover, :focus, :nth-child(), :not() и :is(), а также псевдоэлементы ::before и ::after, дающие frontend-разработчикам детальный контроль над стилизацией элементов по состоянию и позиции.</p>
+                    <a href="https://devroadmap.ru/roadmaps/frontend">Селекторы CSS</a>
+                    <div>
+                        <input class="branch__btn" type="checkbox" id="checkbox4">
+                        <label for="checkbox4">Изучено</label>
+                    </div>
+                </div>
+            </div>
+            <div class="branch">
+                <div class="branch__block">
+                    <h2>Flexbox</h2>
+                    <p>CSS Flexbox (Flexible Box Layout) — это одномерная система компоновки CSS3, которая распределяет пространство и выравнивает элементы вдоль одной оси — строки или столбца, — что делает её основным инструментом для компоновки на уровне компонентов во frontend-разработке.</p>
+                    <p>  Для активации Flexbox необходимо задать display: flex на контейнере, после чего свойства flex-direction, justify-content, align-items, flex-wrap и gap дают точный контроль над тем, как дочерние элементы размещаются и занимают пространство. </p>
+                    <a href="https://devroadmap.ru/roadmaps/frontend">Flexbox</a>
+                    <div>
+                        <input class="branch__btn" type="checkbox" id="checkbox5">
+                        <label for="checkbox5">Изучено</label>
+                    </div>
+                </div>
+            </div>
+            <div class="branch">
+                <div class="branch__block">
+                    <h2>Откликчивый CSS</h2>
+                    <p>Адаптивный CSS-дизайн — это практика создания веб-интерфейсов, которые плавно подстраиваются под любой размер экрана — от мобильных телефонов до широких десктопных мониторов — с помощью CSS3-техник без обслуживания отдельных версий страниц.</p>
+                    <p> Основу адаптивного дизайна составляют CSS-медиазапросы (@media (max-width: 768px) { ... }), применяющие разные стили в контрольных точках, в сочетании с адаптивными макетами на базе CSS Flexbox, CSS Grid, процентных значений ширины и функции clamp() для плавной типографики. </p>
+                    <a href="https://devroadmap.ru/roadmaps/frontend">Откликчивый CSS</a>
+                    <div>
+                        <input class="branch__btn" type="checkbox" id="checkbox6">
+                        <label for="checkbox6">Изучено</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
